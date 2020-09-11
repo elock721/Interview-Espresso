@@ -1,4 +1,4 @@
-var firstUniqChar = function() {
+var firstUniqChar = function(s) {
     
     /*start by declaring a variable "hashTable" 
     and set it to an empty object*/ 
@@ -21,8 +21,30 @@ var firstUniqChar = function() {
     to the index*/
     for (let i = 0; 1 < s.length; i++) {
         const char = s[i];
-        
+        if (hashTable[char] == 1) return i;
     }
+
+    return -1;
 }
 
-   
+
+// BIG O
+
+/* ALWAYS LOOK FOR LOOPS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
