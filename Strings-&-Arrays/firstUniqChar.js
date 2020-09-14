@@ -1,9 +1,9 @@
-var firstUniqChar = function(s) {
-    
+var firstUniqChar = function (s) {
+
     /*start by declaring a variable "hashTable" 
-    and set it to an empty object*/ 
+    and set it to an empty object*/
     const hashTable = {};
-    
+
     /* then we can loop through the characters 
      in our string by using a "for of" loop
      - this simply gives us each char in the string in the var
@@ -77,7 +77,7 @@ var firstUniqChar = function (s) {
 
 // BIG O ^ 
 
-/* 
+/*
 
 Time Complexity - O(n^2): quadratic time
 
@@ -90,5 +90,5 @@ Space Complexity - 0(1): constant space
 - not using any data structures to store intermediate variables
 
 
-*/ 
+*/
 
