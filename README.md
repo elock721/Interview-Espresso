@@ -6,11 +6,14 @@
 
 /* 
 
-Time Complexity - 
+Time Complexity - 0(n)
 
 -------------------------------------------
 
 Space Complexity - 
+
+
+
 
 
 
