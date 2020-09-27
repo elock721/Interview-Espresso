@@ -17,19 +17,37 @@
 // sort each string =>
 // sorted key in table? add to array =>
 // sorted key not in table? create array
-//
-//
-//
-//
-//
-
-
-
-
 
 var groupAnagrams = function(string) {
+    // initalizing hash table to an empty object
     const ht = {};
+    // loop through strings with for of loop
+    for (let str of strs) {
+        // v => 'abc' -> ['a','b','c'].sort() -> .join('')
+        const sorted = str.split('').sort().join() // <= method chaining (commnon in JS)
+        // 
+        if (ht[sorted]) ht[sorted].push(str);
+        else ht[sorted] = [str];
+    }
+    return Object.values(ht)
 }
 
 
-// 
+// BIG O ^ 
+
+/* 
+
+Time Complexity - 0(n)
+
+-------------------------------------------
+
+Space Complexity - 
+
+
+
+
+
+
+
+
+*/
