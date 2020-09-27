@@ -1,46 +1,43 @@
 /* 
+Valid Palindrome: Leet Code #125
 
-Problem: 
+PROBLEM: Given a string, determine whether it is a palindrone 
 
-INPUT:
+INPUT: string 
 
-OUTPUT:
+OUTPUT: boolean 
 
-EDGE CASES:
+EDGE CASES: special characters 
 
-ASSUMPTIONS:
+ASSUMPTIONS: remove special characters, treat upper case and lower case letters the same 
 
-GENERAL NOTES:
+GENERAL NOTES: New method introduced: Pointer method aka Pointer Traversal, 
+a big part of solving algorithms is comparing different solutions 
 
 PSEUDO CODE:
 
 */ 
+// ----------------------------------------------------------------------
+// NAIVE SOLUTION 
 
+var isPalindrome = function (s) {
+    // call split method on string
+    s.split('').reverse().join('') === s; 
+    // ^ 'aba' -> ['a','b','a'] -> 'aba'
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// BIG O ^ 
-
+// NAIVE BIG O ^ 
 /* 
 
-Time Complexity - 
+TIME COMPLEXITY: O(n) -> linear time 
 
--------------------------------------------
+n time for each method (3 methods) - 3n => O(n)
 
-Space Complexity - 
+SPACE COMPLEXITY: O(n): linear space 
 
-
+implicit O(n) space
 */
+// ----------------------------------------------------------------------
+
+// OPTIMAL SOLUTION 
+
