@@ -29,15 +29,22 @@ var groupAnagrams = function(string) {
         if (ht[sorted]) ht[sorted].push(str);
         else ht[sorted] = [str];
     }
+    // Object.values - the way we convert our hashtable output format array of arrays =>
+    // pulls off all values and throws away keys
     return Object.values(ht)
-}
+};
 
 
 // BIG O ^ 
 
 /* 
 
-Time Complexity - 0(n)
+Time Complexity - O(n * (m log m))
+n = length of "strings" | m = longest string
+
+1 loop -> n 
+
+sorting operations are very expensive, built in sort method is n log n 
 
 -------------------------------------------
 
