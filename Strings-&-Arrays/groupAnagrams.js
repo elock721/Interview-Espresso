@@ -48,13 +48,11 @@ sorting operations are very expensive, built in sort method is n log n
 
 -------------------------------------------
 
-Space Complexity - 
+Space Complexity - O(n)
 
+n keys in the hash table 
 
-
-
-
-
+n = length of stings 
 
 
 */
