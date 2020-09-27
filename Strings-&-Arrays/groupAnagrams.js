@@ -24,7 +24,7 @@ var groupAnagrams = function(string) {
     // loop through strings with for of loop
     for (let str of strs) {
         // v => 'abc' -> ['a','b','c'].sort() -> .join('')
-        const sorted = str.split('').sort().join() // <= method chaining (commnon in JS)
+        const sorted = str.split('').sort().join('') // <= method chaining (commnon in JS)
         // 
         if (ht[sorted]) ht[sorted].push(str);
         else ht[sorted] = [str];
