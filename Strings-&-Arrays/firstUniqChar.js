@@ -19,7 +19,7 @@ var firstUniqChar = function (s) {
     }
     /* use a standard "for" loop here because we don't have access
     to the index*/
-    for (let i = 0; 1 < s.length; i++) {
+    for (let i = 0; i < s.length; i++) {
         const char = s[i];
         if (hashTable[char] == 1) return i;
     }
