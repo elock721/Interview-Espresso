@@ -76,29 +76,51 @@ var isValid = function(s) {
     }
 };
 
+// OPTIMAL SOLUTION 
 
+var isValid = function(s) {
+    // empty array to keep track of opening parentheses 
+    var stack = [];
+    //we want to check one char at a time and do not need an index so 
+    // we use for of loop
 
+    const pairs = {
+        '(': ')',
+        '[': ']',
+        '{': '}'
+    };
 
-
-
-
-
-
-
-
-
-
+    for (let char of s) {
+        if (char in pairs){
+            stack.push(char);
+        } else {
+            // check to see if stack is empty
+            if (stack.length === 0) return false;
+            const last = stack.pop();
+            if (pairs[last] !== char) return false;
+        }
+    }
+    if (stack.length) {
+        return false;
+    } else {
+        return true;
+    }
+};
 
 
 // BIG O ^ 
 
 /* 
 
-Time Complexity - 
+Time Complexity - O(n): linear
+
+* one loop
 
 -------------------------------------------
 
-Space Complexity - 
+Space Complexity - O(n): linear (where n = string length)
+
+* worst case size n if all opening parentheses 
 
 
 */
