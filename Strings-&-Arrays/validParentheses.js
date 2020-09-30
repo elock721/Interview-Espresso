@@ -34,6 +34,8 @@ EXP: single loop iteration
 * METHODS: .push/.append - adds to end of array | .pop - removes from end of array
     - PUSH AND POP METHODS = STACK API
 
+* we want to check one char at a time and do not need an index
+
 PSEUDO CODE:
 
 for char in str
@@ -45,6 +47,34 @@ for char in str
 */ 
 
 
+// NAIVE SOLUTION
+var isValid = function(s) {
+    // empty array to keep track of opening parentheses 
+    var stack = [];
+    //we want to check one char at a time and do not need an index so 
+    // we use for of loop
+    for (let char of s) {
+        if (char === '(' || char === '['|| char === '{' ){
+            stack.push(char);
+        } else {
+            // check to see if stack is empty
+            if (stack.length === 0) return false;
+            const last = stack.pop();
+            if (last === '(' && char !== '0') {
+                return false;
+            } else if (last === '[' && char !== ']') {
+                return false;
+            } else if (last !== '{' && char !== '}') {
+                return false;
+            }
+        }
+    }
+    if (stack.length) {
+        return false;
+    } else {
+        return true;
+    }
+};
 
 
 
