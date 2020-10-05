@@ -2,7 +2,7 @@
 
 Search Insert Position: Leet Code #35
 
-Problem: 
+Problem: Given a sorted array and a target value, return the index if the target is found
 
 INPUT:
 
