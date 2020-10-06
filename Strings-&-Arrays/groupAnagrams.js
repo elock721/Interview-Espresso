@@ -4,6 +4,8 @@
 
 // anagram: when two words have the same letters, but they can be in a different order
 
+// ALGO/DS: Hash table 
+
 // INPUT: array of strings[]
 // OUTPUT: array of array of strings string[][]
 

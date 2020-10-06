@@ -3,6 +3,8 @@ Valid Palindrome: Leet Code #125
 
 PROBLEM: Given a string, determine whether it is a palindrone 
 
+ALGO/DS: Hash table 
+
 INPUT: string 
 
 OUTPUT: boolean 

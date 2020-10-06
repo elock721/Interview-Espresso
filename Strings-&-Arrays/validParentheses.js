@@ -2,7 +2,7 @@
 
 Valid Parentheses: Leet Code #20
 
-Data Strucure: the stack
+ALGO/DS: The stack
 
 Problem: Given a string s containing just the characters 
 '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
