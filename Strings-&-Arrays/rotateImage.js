@@ -4,7 +4,7 @@ Rotate Image: Leet Code #48
 
 Problem: 
 
-ALGO/DS:
+ALGO/DS: Matrix - a 2 dimensional array
 
 INPUT:
 

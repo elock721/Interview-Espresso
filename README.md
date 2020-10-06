@@ -4,6 +4,8 @@
 
 Problem: 
 
+ALGO/DS:
+
 INPUT:
 
 OUTPUT:
