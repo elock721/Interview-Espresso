@@ -63,11 +63,11 @@ var rotate = function(matrix) {
 
 /* 
 
-Time Complexity - 
+Time Complexity - O(n^2): quadratic time
 
 -------------------------------------------
 
-Space Complexity - 
+Space Complexity - O(1): constant space 
 
 
 */
