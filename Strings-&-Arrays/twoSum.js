@@ -16,8 +16,11 @@ EDGE CASES: no nums add up to target
 ASSUMPTIONS: always exactly one solution & each number can only be used once
 
 GENERAL NOTES:
+TIME SPACE TRADE OFF
 
 PSEUDO CODE:
+
+NAIVE PSEUDO CODE
 for every number in nums    
     * check every other number
     * if == target, return indices
@@ -49,4 +52,44 @@ Space Complexity - 0(1): constant space
 
 */
 
+/*
+OPTIMAL PSUEDO CODE
+
+for every number in nums 
+    * calculate "counterpart"
+    * in table? return indices
+    * not in table? store with index
+
+*/
+
 // optimal solution 
+
+var twoSum = function(nums, target) {
+    const ht = {};
+    for (let i = 0; i < nums.length; i++) {
+        const num = nums[i];
+        const want = target - num;
+        if (want in ht) {
+            const leftIndex = ht[want];
+            return [leftIndex, i];
+        } else {
+            ht[num] = i;
+        }
+    }
+};
+
+// OPTIMAL BIG O ^ 
+
+/* 
+
+Time Complexity - 0(n): linear time
+
+one loop
+
+-------------------------------------------
+
+Space Complexity - 0(n): linear space
+
+hash table
+
+*/
