@@ -34,7 +34,7 @@ for each row ->
 
 */ 
 
-// 
+// Optimal Solution 
 var rotate = function(matrix) {
   matrix.reverse();  
   for (let i = 0; i < matrix.length; i++) {
@@ -45,19 +45,6 @@ var rotate = function(matrix) {
     }
   }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // BIG O ^ 
 

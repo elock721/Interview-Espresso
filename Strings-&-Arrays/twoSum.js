@@ -2,13 +2,14 @@
 
 Two Sum: Leet Code #1
 
-Problem: 
+Problem: Given an array of numbers and a target, 
+return the indices of the numbers that add up to the target
 
 ALGO/DS:
 
-INPUT:
+INPUT: array of numbers []number & target number
 
-OUTPUT:
+OUTPUT: indices [1,3] or twople (2 cell array)
 
 EDGE CASES:
 
