@@ -5,7 +5,7 @@ Two Sum: Leet Code #1
 Problem: Given an array of numbers and a target, 
 return the indices of the numbers that add up to the target
 
-ALGO/DS:
+ALGO/DS: Hash table 
 
 INPUT: array of numbers []number & target number
 
@@ -24,31 +24,29 @@ for every number in nums
 
 */ 
 
+// naive solution 
+var twoSum = function(nums, target) {
+    for (let i = 0; i < nums.length; i++) {
+        const num = nums[i];
+        const want = target - num;
+        for (let j = i+1; j < nums.length; j++) {
+            if (nums[j] === want) return [i,j];
+        }
+    }
+};
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// BIG O ^ 
+// NAIVE BIG O ^ 
 
 /* 
 
-Time Complexity - 
+Time Complexity - O(n^2): quadratic time
+
+* 2 two nested for loops
 
 -------------------------------------------
 
-Space Complexity - 
-
+Space Complexity - 0(1): constant space 
 
 */
+
+// optimal solution 
