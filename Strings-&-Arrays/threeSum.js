@@ -77,11 +77,14 @@ sorting, inner and outer loop
 
 n log n + (n^2)
 
+drop n log n 
+
 
 
 -------------------------------------------
 
-Space Complexity - 
+Space Complexity - O(n): constant space 
 
+where n == output size
 
 */
