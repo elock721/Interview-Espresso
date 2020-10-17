@@ -20,6 +20,14 @@ Pointer connects to next node in the list - pointers repped by .next property
 
 First node is the head: head -> head.next -> head.next.next -> null
 
+Typically how you use a pointer traversal in a linked list
+
+let on = head;
+while (on !== null) {
+    console.log(on.val)
+    on = on.next;
+}
+
 
 
 
