@@ -1,6 +1,54 @@
-class ListNode {
-    constructor (value) {
-        this.value = value; 
-        this.next = null;
-    }
-}
+/* 
+
+Remove Nth Node: Leet Code #19
+
+Problem: Given a linked list, remove the nth node from the end of the list and return its head.
+
+ALGO/DS:
+
+INPUT:
+
+OUTPUT:
+
+EDGE CASES:
+
+ASSUMPTIONS:
+
+GENERAL NOTES: practicing traversal and changing pointers 
+
+PSEUDO CODE:
+
+*/ 
+
+
+var removeNthFromEnd = function(head, n) {
+    
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// BIG O ^ 
+
+/* 
+
+Time Complexity - 
+
+-------------------------------------------
+
+Space Complexity - 
+
+
+*/
