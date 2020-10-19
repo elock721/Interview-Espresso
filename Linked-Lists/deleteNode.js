@@ -6,9 +6,9 @@ Problem: Given a linked list, remove the nth node from the end of the list and r
 
 ALGO/DS:
 
-INPUT:
+INPUT: head <ListNode 4> LL | n 1 number
 
-OUTPUT:
+OUTPUT: head <ListNode 4> LL
 
 EDGE CASES:
 
