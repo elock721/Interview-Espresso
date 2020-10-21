@@ -10,9 +10,9 @@ INPUT: head <ListNode 4> LL | n 1 number
 
 OUTPUT: head <ListNode 4> LL
 
-EDGE CASES:
+EDGE CASES: n = 0, delete last node | n = length - 1 delete firrst node 
 
-ASSUMPTIONS:
+ASSUMPTIONS: always at least one size 
 
 GENERAL NOTES: practicing traversal and changing pointers 
 
