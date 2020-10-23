@@ -23,7 +23,7 @@ ASSUMPTIONS:
 2. out put triplets must be unique 
 3. triplet order does not matter
 
-GENERAL NOTES:
+GENERAL NOTES: 
 intelligent traversal 
 
 
