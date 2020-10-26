@@ -69,6 +69,10 @@ var isPalindrome = function (s) {
     return true;
 }
 
+var isPalindrome = function (s) {
+    s = s.replace(/[.*+?^${}()|[\]\\]/gi, '').toLowerCase();
+}
+
 // OPTIMAL BIG O ^ 
 /* 
 
