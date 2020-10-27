@@ -27,6 +27,19 @@ var firstUniqChar = function (s) {
     return -1;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 // BIG O ^ 
 
 /* 
@@ -89,6 +102,8 @@ Space Complexity - 0(1): constant space
 
 - not using any data structures to store intermediate variables
 
+
+Lexical Scoping Notes: JS starts at the innermost scope and searches outwards until it finds the variable it was looking for
 
 */
 
